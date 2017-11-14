@@ -2,7 +2,7 @@
 
 This demo uses the base code from the [prismic-demo](https://github.com/arnaudlewis/prismic-demo).
 
-Here are the [prismic repository](https://paperjam-demo.prismic.io/) and the [live demo site]().
+Here are the [prismic repository](https://paperjam-demo.prismic.io/) and the [live demo site](https://cryptic-sands-91582.herokuapp.com/).
 
 
 This project contains a homepage which features different articles.
