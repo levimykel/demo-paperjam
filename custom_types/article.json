@@ -1,0 +1,87 @@
+{
+  "Main" : {
+    "uid" : {
+      "type" : "UID",
+      "config" : {
+        "label" : "URL slug",
+        "placeholder" : "ecriture-de-l-url"
+      }
+    },
+    "titre" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Titre",
+        "placeholder" : "Titre de votre article"
+      }
+    },
+    "image" : {
+      "type" : "Image",
+      "config" : {
+        "constraint" : {
+          "width" : 640,
+          "height" : 427
+        },
+        "thumbnails" : [ ],
+        "label" : "Image"
+      }
+    },
+    "chapo" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "paragraph",
+        "label" : "Chapo",
+        "placeholder" : "Chapô"
+      }
+    },
+    "corps_de_l_article" : {
+      "type" : "StructuredText",
+      "config" : {
+        "multi" : "paragraph",
+        "label" : "Corps de l'article",
+        "placeholder" : "Tapez (ou copiez) ici le corps de l'article"
+      }
+    }
+  },
+  "Metadonnées" : {
+    "titre_home" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Titre home",
+        "placeholder" : "Titre affiché sur la homepage"
+      }
+    },
+    "chapo_home" : {
+      "type" : "Text",
+      "config" : {
+        "label" : "Chapô home",
+        "placeholder" : "Chapô affiché sur la home"
+      }
+    },
+    "auteur" : {
+      "type" : "Link",
+      "config" : {
+        "select" : "document",
+        "customtypes" : [ "auteur" ],
+        "label" : "Auteur",
+        "placeholder" : "Sélectionner l'auteur(e)"
+      }
+    },
+    "categories" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "categorie" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "label" : "Catégorie",
+              "placeholder" : "Sélectionner une catégorie"
+            }
+          }
+        },
+        "label" : "Catégories"
+      }
+    }
+  }
+}

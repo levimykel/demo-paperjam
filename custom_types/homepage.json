@@ -1,0 +1,142 @@
+{
+  "Main" : {
+    "display_name" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Display name",
+        "placeholder" : "Display name"
+      }
+    },
+    "body" : {
+      "type" : "Slices",
+      "fieldset" : "Slice zone",
+      "config" : {
+        "choices" : {
+          "3_titres__une_" : {
+            "type" : "Slice",
+            "fieldset" : "3 titres \"Une\"",
+            "description" : "Un titre principal et 2 titres secondaires",
+            "icon" : "filter_1",
+            "non-repeat" : {
+              "titre_1" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "label" : "Titre 1",
+                  "placeholder" : "Titre 1"
+                }
+              },
+              "titre_2" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "label" : "Titre 2",
+                  "placeholder" : "Titre 2"
+                }
+              },
+              "titre_3" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "label" : "Titre 3",
+                  "placeholder" : "Titre 3"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "4_titres_horizontaux" : {
+            "type" : "Slice",
+            "fieldset" : "4 titres horizontaux",
+            "description" : "Alternance de titre avec image et titre sans image",
+            "icon" : "filter_2",
+            "non-repeat" : {
+              "titre_1" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "customtypes" : [ "article" ],
+                  "label" : "Titre 1",
+                  "placeholder" : "Titre 1"
+                }
+              },
+              "titre_2" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "customtypes" : [ "article" ],
+                  "label" : "Titre 2",
+                  "placeholder" : "Titre 2"
+                }
+              },
+              "titre_3" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "customtypes" : [ "article" ],
+                  "label" : "Titre 3",
+                  "placeholder" : "Titre 3"
+                }
+              },
+              "titre_4" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "customtypes" : [ "article" ],
+                  "label" : "Titre 4",
+                  "placeholder" : "Titre 4"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "3_titres_horizontaux" : {
+            "type" : "Slice",
+            "fieldset" : "3 titres horizontaux",
+            "description" : "3 titres avec image et chapô",
+            "icon" : "filter_3",
+            "non-repeat" : {
+              "titre_1" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "customtypes" : [ "article" ],
+                  "label" : "Titre 1",
+                  "placeholder" : "Titre 1"
+                }
+              },
+              "titre_2" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "customtypes" : [ "article" ],
+                  "label" : "Titre 2",
+                  "placeholder" : "Titre 2"
+                }
+              },
+              "titre_3" : {
+                "type" : "Link",
+                "config" : {
+                  "select" : "document",
+                  "customtypes" : [ "article" ],
+                  "label" : "Titre 3",
+                  "placeholder" : "Titre 3"
+                }
+              }
+            },
+            "repeat" : { }
+          },
+          "colonnes_thematiques" : {
+            "type" : "Slice",
+            "fieldset" : "Colonnes thématiques",
+            "description" : "3 Colonnes thématiques",
+            "icon" : "view_column",
+            "non-repeat" : { },
+            "repeat" : { }
+          }
+        }
+      }
+    }
+  }
+}

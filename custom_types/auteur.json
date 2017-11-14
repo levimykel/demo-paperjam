@@ -1,0 +1,12 @@
+{
+  "Main" : {
+    "nom" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Nom",
+        "placeholder" : "Nom de l'auteur"
+      }
+    }
+  }
+}

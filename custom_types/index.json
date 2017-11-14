@@ -1,16 +1,21 @@
 [{
-  "id": "category",
-  "name": "Category",
+  "id": "article",
+  "name": "Article",
   "repeatable": true,
-  "value": "category.json"
+  "value": "article.json"
 }, {
-  "id": "game",
-  "name": "Game",
+  "id": "auteur",
+  "name": "Auteur",
   "repeatable": true,
-  "value": "game.json"
+  "value": "auteur.json"
 }, {
-  "id": "lobby",
-  "name": "Lobby",
+  "id": "homepage",
+  "name": "Homepage",
+  "repeatable": false,
+  "value": "homepage.json"
+}, {
+  "id": "newsletter",
+  "name": "Newsletter",
   "repeatable": true,
-  "value": "lobby.json"
+  "value": "newsletter.json"
 }]
