@@ -1,0 +1,46 @@
+block variables
+
+
+html.yui3-js-enabled(lang='en-GB')
+
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+    title Paperjam Demo
+    meta(name='description', content='Le négociateur en chef de l’UE espère encore pouvoir aboutir à un accord d’ici 15 jours sur la facture du Brexit, en vue du sommet européen de mi-décembre.')
+    link(rel='shortcut icon', href='/images/favicon_64x64_0.png', type='image/png')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-1.css', media='all')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-2.css', media='all')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-3.css', media='all')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-4.css', media='all')
+    link(type='text/css', rel='stylesheet', href='http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css', media='all')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-5.css', media='all')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-6.css', media='screen')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-7.css', media='all')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-8.css', media='screen')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-9.css', media='print')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-10.css', media='all')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/site-styles-11.css', media='all')
+    link(type='text/css', rel='stylesheet', href='/stylesheets/styles.css', media='all')
+    link(href="https://fonts.googleapis.com/icon?family=Material+Icons" rel='stylesheet')
+    link(type='text/css', rel='stylesheet', href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700', media='all')
+    script(type='text/javascript', src='http://paperjam.lu/sites/all/libraries/modernizr/modernizr.min.js?oz3rqn')
+    script(type='text/javascript', src='/javascript/site-js-1.js')
+    script(type='text/javascript', src='/javascript/site-js-2.js')
+
+    // Required for Previews and Experiments
+    script(src="//code.jquery.com/jquery-2.1.1.min.js")
+    script
+      = ctx?"window.prismic = { endpoint: '" + ctx.endpoint + "' };":""
+    script(src="//static.cdn.prismic.io/prismic.min.js")
+
+  body.page-highlight-paperjam.front(data-wio-id=activeDoc.id)
+    #page-wrapper
+      #page
+
+        include ./layout/header.pug
+
+        block body
+        
+        #sharebar-end-position
+
+    include ./layout/footer.pug

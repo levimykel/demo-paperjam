@@ -1,0 +1,101 @@
+.mod-mobile-cross-sell .mobile-cross-sell-container {
+    position: absolute;
+    z-index: 550;
+    background: #EFEFEF;
+    width: 990px;
+    height: 483px;
+    overflow: hidden;
+}
+
+.mod-mobile-cross-sell .mobile-cross-sell-container.casinolive {
+    width: 1023px;
+    height: 506px;
+}
+
+.mod-mobile-cross-sell .mobile-cross-sell-header {
+    height: 48px;
+    width: 100%;
+    background: #283a48 url(/modules/mobile-cross-sell/images/betfair-logo_201006_.jpg) no-repeat 19px 1px;
+}
+
+.mod-mobile-cross-sell .mobile-cross-sell-content {
+    padding: 16px;
+}
+
+.mod-mobile-cross-sell .mobile-cross-sell-content-left {
+    width: 585px;
+    float: left;
+}
+
+.mod-mobile-cross-sell .mobile-cross-sell-container.casinolive .mobile-cross-sell-content-left {
+    width: 640px;
+}
+
+.mod-mobile-cross-sell .mobile-cross-sell-content-right {
+    width: 322px;
+    float: right;
+}
+
+.mod-mobile-cross-sell .mobile-cross-sell-content-left div {
+    font-size: 14px;
+    line-height: 22px;
+    margin: 10px 0px 16px 0px;
+}
+
+.mod-mobile-cross-sell .mobile-cross-sell-content h3 {
+    font-family: "BlockBesmooth Regular",Arial,sans-serif;
+    font-size: 24px;
+    height: 24px;
+    color: #273946;
+    text-transform: uppercase;
+}
+
+.mod-mobile-cross-sell .close{
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: 32px;
+    height: 33px;
+    display: block;
+    z-index: 600;
+    overflow: hidden;
+}
+
+.mod-mobile-cross-sell .close:hover img{
+    margin-top: -33px;
+}
+
+
+.mod-mobile-cross-sell .close.clicked img{
+    margin-top: -66px;
+}
+
+.mod-mobile-cross-sell .close img{
+    border: 0;
+}
+
+.mod-mobile-cross-sell .banner{
+    width: 990px;
+    height: 483px;
+}
+
+.mod-mobile-cross-sell .launch-promo {
+    width: 100px;
+    position: absolute;
+    top: 440px;
+    left: 25px;
+}
+
+.mod-mobile-cross-sell .mobile-cross-sell-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #273A47;
+    opacity: 0.5;
+    filter: alpha(opacity = 50);
+    -ms-filter: "alpha(opacity = 50)";
+    z-index: 500;
+}
+

@@ -1,0 +1,28 @@
+{
+  "Main" : {
+    "name" : {
+      "type" : "StructuredText",
+      "config" : {
+        "single" : "heading1",
+        "label" : "Name"
+      }
+    }
+  },
+  "Related product" : {
+    "products" : {
+      "type" : "Group",
+      "config" : {
+        "fields" : {
+          "product" : {
+            "type" : "Link",
+            "config" : {
+              "select" : "document",
+              "label" : "Product"
+            }
+          }
+        },
+        "label" : "Products"
+      }
+    }
+  }
+}

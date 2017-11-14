@@ -1,0 +1,16 @@
+[{
+  "id": "category",
+  "name": "Category",
+  "repeatable": true,
+  "value": "category.json"
+}, {
+  "id": "game",
+  "name": "Game",
+  "repeatable": true,
+  "value": "game.json"
+}, {
+  "id": "lobby",
+  "name": "Lobby",
+  "repeatable": true,
+  "value": "lobby.json"
+}]

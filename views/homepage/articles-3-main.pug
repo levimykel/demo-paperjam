@@ -1,0 +1,93 @@
+.row
+  #pj_highlight_level1_main.col-md-8
+    article#node-161238.node.node-news.node-promoted.teaser.pj_teaser_highlight.pj_teaser_big.with-picture.clearfix
+  
+      - var link1 = slice.primary.titre_1
+      - var link1Url = ctx.linkResolver(link1)
+
+      hr.top-line
+      .inner
+        .cover
+          a.cover-image-link(href=link1Url)
+            img(src=link1.data.image.url, width='640', height='427', alt=link1.data.image.alt)
+          .categs-wrapper
+            .content-type.uc
+              a(href='#') News
+            .category.uc
+              a(href='#') Société
+            .clearfix
+        .properties
+          .title
+            h2
+              a(href=link1Url) !{link1.data.titre_home}
+          .extended-wrapper
+            span.date.uc.clearfix 12:00
+            span.author Par 
+              a(href='#') Céline Coubray
+          .clearfix
+        .content
+          p !{link1.data.chapo_home}
+        .clearfix
+      hr.bottom-line
+      
+      
+  #pj_highlight_level1_col.col-md-4
+    article#node-161242.node.node-news.node-promoted.teaser.pj_teaser_highlight.pj_teaser_highlight_right.clearfix
+
+      - var link2 = slice.primary.titre_2
+      - var link2Url = ctx.linkResolver(link2)
+    
+      hr.top-line
+      .inner
+        .cover
+          a.cover-image-link(href=link2Url)
+            img(src=link2.data.image.url, width='315', height='210', alt=link2.data.image.alt)
+          .categs-wrapper
+            span.content-type.uc
+              a(href='#') News
+            span.category.uc
+              a(href='#') Économie
+            .clearfix
+        .properties
+          .title
+            h2
+              a(href=link2Url) !{link2.data.titre_home}
+          .extended-wrapper
+            span.date.uc.clearfix 14:26
+            .author Par 
+              a(href='#') Jean-Michel Hennebert
+            .clearfix
+          .clearfix
+      hr.bottom-line
+    article#node-161244.node.node-news.node-promoted.teaser.pj_teaser_highlight.pj_teaser_highlight_right.clearfix
+
+      - var link3 = slice.primary.titre_3
+      - var link3Url = ctx.linkResolver(link3)
+    
+      hr.top-line
+      .inner
+        .cover
+          a.cover-image-link(href=link3Url)
+            img(src=link3.data.image.url, width='315', height='210', alt=link3.data.image.alt)
+          .categs-wrapper
+            span.content-type.uc
+              a(href='#') News
+            span.category.uc
+              a(href='#') Fonds
+            .clearfix
+        .properties
+          .title
+            h2
+              a(href=link3Url) !{link3.data.titre_home}
+          .extended-wrapper
+            span.date.uc.clearfix 14:52
+            .author Par 
+              a(href='#') Paperjam.lu
+            .clearfix
+          .clearfix
+      hr.bottom-line
+.row.pj_highlight_line_separator
+  .col-md-8
+    hr.bottom-line
+  .col-md-4
+    hr.bottom-line

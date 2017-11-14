@@ -1,0 +1,44 @@
+
+extends ./layout.pug
+
+block variables
+  - var nav_class = 'dark'
+  - var activeDoc = document
+
+block body
+
+  main#main(role='main')
+    section#before-content2-wrapper.container-fluid
+      .container
+        #before-content2.row
+          .col-md-12
+            .region.region-before-content2
+    section#content-wrapper.container-fluid
+      .container
+        #content.row
+          .col-md-12
+            a#main-content
+            .region.region-content
+              #block-system-main.block.block-system
+                hr.top-line
+                .content
+                  .view.view-highlight-paperjam.view-id-highlight_paperjam.view-display-id-highlight_pj.view-dom-id-c0b2916115be6b94bd19ee7267b35b66
+                    .view-content
+                      .views-row.views-row-1.views-row-odd.views-row-first.views-row-last
+                        .view-highlight-paperjam
+                          .panel-display.hewston.pane-node-field-highlight-pj-2.clearfix.node.node-highlight-paperjam
+                            
+                            for slice in document.data.body
+                              case slice.slice_type
+                                when '3_titres__une_'
+                                  include ./homepage/articles-3-main.pug
+                                when '4_titres_horizontaux'
+                                  include ./homepage/articles-4-horizontal.pug
+                                when '3_titres_horizontaux'
+                                  include ./homepage/articles-3-horizontal.pug
+                                default
+                                  p Need to add: !{slice.slice_type}
+                                  
+                hr.bottom-line
+                
+    include ./homepage/page-bottom.pug

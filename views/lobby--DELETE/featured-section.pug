@@ -1,0 +1,36 @@
+#mod-casino-grid-carousel-variants-jackpots-271188-container.mod
+  #mod-casino-grid-carousel-variants-jackpots-271188.mod-casino-grid-carousel-variants-jackpots.mod-casino-grid-carousel-variants-jackpots-casino-grid-carousel-variants-jackpots.mod-casino-grid-carousel-variants-jackpots.mod-casino-grid-carousel-variants-jackpots-casino-grid-carousel-variants-jackpots.gamesi13n.mod-casino-grid-carousel-variants-jackpots.mod-casino-grid-carousel-variants-jackpots-casino-grid-carousel-variants-jackpots.gamesi13n-sec-Grid
+    div
+      .casino-module
+        .header
+          h3.title
+            != RichText.asText(slice.primary.section_label)
+        .body
+          .grid.row
+          
+            each item in slice.items
+              - var game = item.game.data
+              if game.name
+                - console.log(game.name[0].text)
+              else
+                - console.log(item)
+              .col-25
+                #mod-casino-grid-cell-271243-container.mod
+                  #mod-casino-grid-cell-271243.mod-casino-grid-cell.mod-casino-grid-cell-casino-grid-cell
+                    #mod-casino-game-tile-271244-container.mod
+                      #mod-casino-game-tile-271244.mod-casino-game-tile.mod-casino-game-tile-casino-game-tile
+                        .grid-cell-wrapper.normal(data-game-code-id='bfb')
+                          .image
+                            a.ga-pro.gamesi13n-action-play.gamesi13n-gameId-bfb.gamesi13n-gameName-Buffalo_Blitz.gamesi13n-pageArea-Main
+                              .casino-game-image
+                                img.main.done(src=game.image ? game.image.url : '', width='100%', height='160', onload="this.className+=' done'")
+                                .fallback(title='Buffalo Blitz')
+                          .details.normal-type
+                            .description
+                              h3.game-name
+                                != game.name ? game.name[0].text : "Game Title"
+                              .more-info
+                                != RichText.asText(slice.primary.section_label)
+                            .action
+                              button.button.ga-pro.gamesi13n-action-play.gamesi13n-gameId-bfb.gamesi13n-gameName-Buffalo_Blitz.gamesi13n-pageArea-Main
+                                span.label Play Now

@@ -1,0 +1,61 @@
+
+extends ./layout.pug
+
+block variables
+  - var nav_class = 'dark'
+  - var activeDoc = document
+
+block body
+ 
+  main#main(role='main')
+    section#before-content2-wrapper.container-fluid
+      .container
+        #before-content2.row
+          .col-md-12
+            .region.region-before-content2
+    section#content-wrapper.container-fluid
+      .container
+
+        include ./article/breadcrumb.pug
+
+        #content.row
+          .col-md-12
+            a#main-content
+            .region.region-content
+              #block-system-main.block.block-system
+                hr.top-line
+                .content
+                  article#node-161186.node.node-news.node-promoted.node-full.full.clearfix.with-sidebar
+                    hr.top-line
+                    .full-properties
+                      .surtitle.uc Modalités de sortie de l’UE 
+                      .title
+                        != RichText.asHtml(document.data.titre) 
+
+                      include ./article/sub-title.pug
+
+                    #sharebar-start-position
+                    .body
+                      .full-cover.pull-right
+                        .image
+                          img(src=document.data.image.url, width='640', height='427', alt=document.data.image.alt)
+                        .caption(style=' margin-bottom: 10px; ')
+                          != RichText.asText(document.data.titre)
+                        .credits
+                          a(href='/credits-photo/photo-commission-europeenne-0') (Photo: Commission Européenne)
+                      .f-sharelines.pull-right
+
+                    include ./article/sidebar.pug
+
+                    .content
+                      .content-teaser-text-tags
+                        .content-teaser.tk-league-gothic
+                          != RichText.asHtml(document.data.chapo) 
+                        .content-text
+                          != RichText.asHtml(document.data.corps_de_l_article) 
+
+                        include ./article/tags.pug
+
+                    include ./article/author.pug
+
+                hr.bottom-line

@@ -1,0 +1,53 @@
+body {
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-color: #1f1f1f;
+}
+
+.ssc-mls {
+  background: url("../images/ssc-mobilelinks-sprite-v2.png") no-repeat;
+}
+
+.ssc-srg a {
+  background: url("../images/ssc-footer-banners.png");
+}
+
+.ssc-fal a {
+  background: url("../images/ssc-logos-sprite-com-v9.png") no-repeat;
+}
+
+.wio-link {
+  background-color: #FFB808 !important;
+  color: white;
+  position: fixed;
+  z-index: 10000;
+  padding: 6px 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 50%;
+  bottom: 30px;
+  left: 30px;
+  height: 50px;
+  width: 50px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 2px 7px 0 rgba(90, 90, 140, 0.4);
+          box-shadow: 0 2px 7px 0 rgba(90, 90, 140, 0.4);
+}
+.wio-link img {
+  display: none;
+}
+.wio-link:after {
+  font-family: 'Material Icons';
+  content: '\E3C9';
+  color: white;
+  font-size: 24px; 
+}
